@@ -90,7 +90,7 @@ jobs:
       - run:
           name: Start backEnd
           command: |
-            npm run backend:start
+            npm run api:start
 workflows:
   udagram:
     jobs:

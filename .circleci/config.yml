@@ -95,14 +95,14 @@ workflows:
   udagram:
     jobs:
       - build
-      - slack/on-hold:
+      - hold:
           context: slack-secrets
           requires:
             - build
       - pause_workflow:
           requires:
             - build
-            - slack/on-hold
+            - hold
           type: approval
       - deploy:
           requires:

@@ -91,19 +91,3 @@ jobs:
           name: Start backEnd
           command: |
             npm run api:start
-workflows:
-  udagram:
-    jobs:
-      - build
-      - hold:
-          context: slack-secrets
-          requires:
-            - build
-      - pause_workflow:
-          requires:
-            - build
-            - hold
-          type: approval
-      - deploy:
-          requires:
-            - pause_workflow

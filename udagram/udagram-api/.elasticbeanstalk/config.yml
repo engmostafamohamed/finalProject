@@ -14,6 +14,6 @@ global:
   instance_profile: aws-elasticbeanstalk-ec2-role
   platform_name: null
   platform_version: null
-  profile: default
+  profile: null
   sc: null
   workspace_type: Application

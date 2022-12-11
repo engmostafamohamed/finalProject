@@ -64,10 +64,6 @@ jobs:
           command: |
             npm run frontend:deploy
       - run:
-          name: Install AWS dependencies
-          command: |
-            eb create udagram-api-dev
-      - run:
           name: Deploy backEnd
           command: |
             npm run api:deploy

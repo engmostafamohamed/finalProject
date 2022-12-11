@@ -66,7 +66,7 @@ jobs:
       - run:
           name: Install AWS dependencies
           command: |
-            sudo pip install awsebcli
+            eb create udagram-api-dev
       - run:
           name: Deploy backEnd
           command: |

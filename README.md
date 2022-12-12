@@ -24,17 +24,17 @@ This application is provided to you as an alternative starter project if you do 
 - AWS CLI v2, v1 can work but was not tested for this project
 
 - A RDS database running Postgres.
-[RDS](udagram/udagram-api/mock/RDS.png)
+![RDS](udagram/udagram-api/mock/RDS.png)
 
 - A S3 bucket for hosting uploaded pictures.
-[S3 bucket](udagram/udagram-api/mock/S3.png)
+![S3 bucket](udagram/udagram-api/mock/S3.png)
 
 - A EBS for represnt backend(node.js)
-[Elastic BeanStock](udagram/udagram-api/mock/EBS.png)
+![Elastic BeanStock](udagram/udagram-api/mock/EBS.png)
 
 - A aws structure it is show the steps from data enter in frontend and custom in backEnd to save in database
 
-[aws structure](udagram/udagram-api/mock/awsCloud.png)
+![aws structure](udagram/udagram-api/mock/awsCloud.png)
 ### Installation
 
 Provision the necessary AWS services needed for running the application:
@@ -65,9 +65,9 @@ The e2e tests are using Protractor and Jasmine.
 
 ## Built With
 
-- [Angular](https://angular.io/) - Single Page Application Framework
-- [Node](https://nodejs.org) - Javascript Runtime
-- [Express](https://expressjs.com/) - Javascript API Framework
+- ![Angular](https://angular.io/) - Single Page Application Framework
+- ![Node](https://nodejs.org) - Javascript Runtime
+- ![Express](https://expressjs.com/) - Javascript API Framework
 
 ## License
 

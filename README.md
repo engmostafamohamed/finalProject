@@ -24,7 +24,7 @@ This application is provided to you as an alternative starter project if you do 
 - AWS CLI v2, v1 can work but was not tested for this project
 
 - A RDS database running Postgres.
-![RDS](https://github.com/engmostafamohamed/finalProject/udagram/udagram-api/mock/RDS.png)
+![RDS](https://github.com/engmostafamohamed/finalProject/blob/main/udagram/udagram-api/mock/RDS.png)
 
 - A S3 bucket for hosting uploaded pictures.
 ![S3 bucket](udagram/udagram-api/mock/S3.png)

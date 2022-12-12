@@ -60,9 +60,12 @@ jobs:
             echo "TODO: Build the backend API"
             npm run api:build
       - run:
-          name: test frontEnd
+          name: lint frontEnd
           command: |
             npm run frontend:lint
+      - run:
+          name: test frontEnd
+          command: |
             npm run frontend:test
       - run:
           name: Deploy frontEnd

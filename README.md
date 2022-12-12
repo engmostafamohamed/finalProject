@@ -24,25 +24,37 @@ This application is provided to you as an alternative starter project if you do 
 - AWS CLI v2, v1 can work but was not tested for this project
 
 - A RDS database running Postgres.
-![RDS](https://github.com/engmostafamohamed/finalProject/blob/main/udagram/udagram-api/mock/RDS.png)
+![RDS](https://github.com/engmostafamohamed/finalProject/blob/main/udagram/screenShoot/RDS.png)
 
 - A S3 bucket for hosting uploaded pictures.
-![S3 bucket](udagram/udagram-api/mock/S3.png)
+![S3 bucket](https://github.com/engmostafamohamed/finalProject/blob/main/udagram/screenShoot/S3.png)
 
 - A EBS for represnt backend(node.js)
-![Elastic BeanStock](udagram/udagram-api/mock/EBS.png)
+![Elastic BeanStock](https://github.com/engmostafamohamed/finalProject/blob/main/udagram/screenShoot/EBS.png)
+
+- A CircleciSteps it is show the steps from install packages to deploy frontEnd and backEnd app
+
+![Circleci Steps](https://github.com/engmostafamohamed/finalProject/blob/main/udagram/screenShoot/CircleciSteps(1).png)
+![Circleci Steps](https://github.com/engmostafamohamed/finalProject/blob/main/udagram/screenShoot/CircleciSteps(2).png)
+
+- A CircleciENV it is show the CircleCi enviroment Variable from install packages to deploy frontEnd and backEnd app
+
+![Enviroment Variable](https://github.com/engmostafamohamed/finalProject/blob/main/udagram/screenShoot/CircleciENV(1).png)
+![Enviroment Variable](https://github.com/engmostafamohamed/finalProject/blob/main/udagram/screenShoot/CircleciENV(2).png)
 
 - A aws structure it is show the steps from data enter in frontend and custom in backEnd to save in database
 
-![aws structure](udagram/udagram-api/mock/awsCloud.png)
+![aws structure](https://github.com/engmostafamohamed/finalProject/blob/main/udagram/screenShoot/awsCloud.png)
 ### Installation
 
 Provision the necessary AWS services needed for running the application:
 
 1. In AWS, RDS database running Postgres.
 2. In AWS, s3 bucket for hosting the uploaded files.
-3. Export the ENV variables needed or use a package like [dotnev](https://www.npmjs.com/package/dotenv)/.
-4. From the root of the repo, navigate udagram-api folder `cd starter/udagram-api` to install the node_modules `npm install`. After installation is done start the api in dev mode with `npm run dev`.
+
+3. create ENV variables needed or use a package like [dotnev]
+4. `cd starter/udagram-api` to install the node_modules `npm install`. After installation is done start the api in dev mode with `npm run dev`.
+
 5. Without closing the terminal in step 1, navigate to the udagram-frontend `cd starter/udagram-frontend` to intall the node_modules `npm install`. After installation is done start the api in dev mode with `npm run start`.
 
 ## Testing
@@ -62,14 +74,4 @@ Unit tests are using the Jasmine Framework.
 ### End to End Tests:
 
 The e2e tests are using Protractor and Jasmine.
-
-## Built With
-
-- ![Angular](https://angular.io/) - Single Page Application Framework
-- ![Node](https://nodejs.org) - Javascript Runtime
-- ![Express](https://expressjs.com/) - Javascript API Framework
-
-## License
-
-[License](LICENSE.txt)
 ```

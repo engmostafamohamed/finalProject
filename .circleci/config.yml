@@ -59,13 +59,11 @@ jobs:
           command: |
             echo "TODO: Build the backend API"
             npm run api:build
+
       - run:
-          name: lint frontEnd
+          name: frontEnd Test
           command: |
-            npm run frontend:lint
-      - run:
-          name: test frontEnd
-          command: |
+            npm install -D puppeteer
             npm run frontend:test
       - run:
           name: Deploy frontEnd

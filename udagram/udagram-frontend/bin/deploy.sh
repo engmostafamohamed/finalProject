@@ -1,1 +1,1 @@
-aws s3 cp --recursive --acl public-read ./www s3://ui-test3/
+aws s3 cp --recursive --acl public-read ./ s3://ui-test3/

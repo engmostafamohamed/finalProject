@@ -10,7 +10,7 @@ jobs:
     filters:
       branches:
         only:
-          - master
+          - main
     docker:
       # the base image can run most needed actions with orbs
       - image: "cimg/node:14.15"

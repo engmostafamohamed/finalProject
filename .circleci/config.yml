@@ -7,10 +7,6 @@ orbs:
   # different jobs are calles later in the workflows sections
 jobs:
   build:
-    filters:
-      branches:
-        only:
-          - main
     docker:
       # the base image can run most needed actions with orbs
       - image: "cimg/node:14.15"
@@ -78,11 +74,15 @@ jobs:
           command: |
             npm run deploy
             echo "# TODO: Install, build, deploy in both apps"
-      # - run:
-      #     name: Start frontEnd
-      #     command: |
-      #       npm run frontend:start
-      # - run:
-      #     name: Start backEnd
-      #     command: |
-      #       npm run api:start
+workflows:
+  udagram:
+    jobs:
+      - build
+      - hold:
+          filters:
+            branches:
+              only:
+                - master
+          type: approval
+          requires:
+            - build

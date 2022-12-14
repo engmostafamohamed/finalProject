@@ -14,6 +14,8 @@
 
 ### Pipeline process
 
+![Circleci Steps](<https://github.com/engmostafamohamed/finalProject/blob/main/udagram/screenShoot/pipeline process.png>)
+
 - A CircleciSteps it is show the steps
   -Install Front-End Dependencies
   -Install Back-End Dependencies
@@ -26,6 +28,10 @@
 
 ![Circleci Steps](<https://github.com/engmostafamohamed/finalProject/blob/main/udagram/screenShoot/CircleciSteps(1).png>)
 ![Circleci Steps](<https://github.com/engmostafamohamed/finalProject/blob/main/udagram/screenShoot/CircleciSteps(2).png>)
+
+### pipeline diagram
+
+![aws structure](https://github.com/engmostafamohamed/finalProject/blob/main/udagram/screenShoot/pipelineDiagram.png)
 
 ### Relation Database Service
 
@@ -62,7 +68,3 @@ Provision the necessary AWS services needed for running the application:
 4. `cd starter/udagram-api` to install the node_modules `npm install`. After installation is done start the api in dev mode with `npm run dev`.
 
 5. Without closing the terminal in step 1, navigate to the udagram-frontend `cd starter/udagram-frontend` to intall the node_modules `npm install`. After installation is done start the api in dev mode with `npm run start`.
-
-### link Hosting
-
-The hosted website link:http://udagram-frontend22.s3-website-us-east-1.amazonaws.com

@@ -9,14 +9,15 @@ orbs:
 
 jobs:
   install-node-example:
-    docker:
-      - image: "cimg/base:stable"
     steps:
       - node/install:
         node-version: "14.15"
       - checkout
       - eb/setup
   build:
+    docker:
+      # the base image can run most needed actions with orbs
+      - image: "cimg/node:14.15"
     steps:
       # Use root level package.json to install dependencies in the frontend app
       - run:
@@ -62,6 +63,9 @@ jobs:
             echo "TODO: Build the backend API"
             npm run api:build
   deploy:
+    docker:
+      # the base image can run most needed actions with orbs
+      - image: "cimg/node:14.15"
     steps:
       # Use root level package.json to install dependencies in the frontend app
       - run:

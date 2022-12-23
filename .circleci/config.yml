@@ -174,11 +174,13 @@ workflows:
     jobs:
       - build
       - deploy:
-          requires:
-            - build
-
           filters:
             branches:
               only:
                 - master
-          
+          type: approval
+          requires:
+            - build
+      - deploy:
+          requires:
+            - hold

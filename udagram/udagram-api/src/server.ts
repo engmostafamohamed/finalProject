@@ -10,7 +10,7 @@ import { V0_FEED_MODELS, V0_USER_MODELS } from "./controllers/v0/model.index";
 
 (async () => {
   dotenv.config();
-  // console.log(process.env.NODE_ENV)
+  // console.log(process.env)
   try {
     await sequelize.authenticate();
     console.log("Connection has been established successfully.");

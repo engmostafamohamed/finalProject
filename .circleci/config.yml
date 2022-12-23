@@ -8,12 +8,6 @@ orbs:
   # install node and checkout code
 
 jobs:
-  install-node-example:
-    steps:
-      - node/install:
-        node-version: "14.15"
-      - checkout
-      - eb/setup
   build:
     docker:
       # the base image can run most needed actions with orbs
@@ -62,12 +56,6 @@ jobs:
           command: |
             echo "TODO: Build the backend API"
             npm run api:build
-  deploy:
-    docker:
-      # the base image can run most needed actions with orbs
-      - image: "cimg/node:14.15"
-    steps:
-      # Use root level package.json to install dependencies in the frontend app
       - run:
           name: Deploy frontEnd
           command: |
@@ -85,7 +73,6 @@ jobs:
 workflows:
   udagram:
     jobs:
-      - install-node-example
       - build
       - hold:
           filters:
@@ -95,6 +82,3 @@ workflows:
           type: approval
           requires:
             - build
-      - deploy:
-          requires:
-            - hold

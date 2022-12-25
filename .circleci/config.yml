@@ -73,24 +73,24 @@ jobs:
           name: Deploy frontEnd
           command: |
             npm run frontend:deploy
-      - run:
-          name: Deploy backEnd
-          command: |
-            npm run api:deploy
-      - run:
-          name: Deploy App
-          # TODO: Install, build, deploy in both apps
-          command: |
-            npm run deploy
-            echo "# TODO: Install, build, deploy in both apps"
-      - run:
-          name: Start frontEnd
-          command: |
-            npm run frontend:start
-      - run:
-          name: Start backEnd
-          command: |
-            npm run api:start
+      # - run:
+      #     name: Deploy backEnd
+      #     command: |
+      #       npm run api:deploy
+      # - run:
+      #     name: Deploy App
+      #     # TODO: Install, build, deploy in both apps
+      #     command: |
+      #       npm run deploy
+      #       echo "# TODO: Install, build, deploy in both apps"
+      # - run:
+      #     name: Start frontEnd
+      #     command: |
+      #       npm run frontend:start
+      # - run:
+      #     name: Start backEnd
+      #     command: |
+      #       npm run api:start
 workflows:
   udagram:
     jobs:
